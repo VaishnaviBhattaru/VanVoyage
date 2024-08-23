@@ -14,6 +14,9 @@ body{
   margin-right: 10vw;
   
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 /* h3{
   padding-left: 5vw;
   padding-top: 100px;
