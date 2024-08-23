@@ -1,26 +1,28 @@
-import React from "react";
+import React, {Suspense} from "react";
 // import { useParams } from "react-router";
-import { Link, Outlet, NavLink, useLoaderData } from "react-router-dom";
+import { Link, Outlet, NavLink, useLoaderData, defer, Await } from "react-router-dom";
 import { getHostVansbyID } from "../../api";
 import { requireAuth } from "../../utils";
 
 
+
 export async function loader({params, request}) {
     await requireAuth(request)
-    return getHostVansbyID(params.id)
+    return defer({van: getHostVansbyID(params.id)})
 }
 export default function HVanDetails(){
    
-    const van = useLoaderData()
-    console.log(van)
+    const HostVanPromise = useLoaderData()
+    
     const activeStyle = {
         fontWeight: "bold",
         textDecoration: "underline",
         color: "#161616"}
-    return(
-        <>
-          <div className="host-van-container">
-        <Link
+
+    function renderHostVan(van){
+        return(
+            <>
+             <Link
                 to=".."
                 relative="path"
                 className="back-button"
@@ -54,6 +56,17 @@ export default function HVanDetails(){
 
             </nav>
         <Outlet context={{van}}/>
+            </>
+        )
+    }
+    return(
+        <>
+          <div className="host-van-container">
+       <Suspense fallback={<h3>Loading van Data...</h3>}>
+        <Await resolve={HostVanPromise.van}>
+            {renderHostVan}
+        </Await>
+       </Suspense>
         </div> 
     
         </>

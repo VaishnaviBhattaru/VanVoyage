@@ -1,18 +1,18 @@
-import React from "react";
-import { Link, Outlet, useLoaderData } from "react-router-dom";
+import React, {Suspense} from "react";
+import { Link, Outlet, useLoaderData, defer, Await } from "react-router-dom";
 import { getHostVans } from "../../api";
 import { requireAuth } from "../../utils";
 
 export async function loader({request}) {
     await requireAuth(request)
-    return getHostVans()
-    return null
+    return defer({vans: getHostVans()})
 }
 
 export default function HVans(){
 
-    const vans = useLoaderData()
+    const hostVansPromise = useLoaderData()
     // console.log(vans)
+    function renderHostVans(vans){
     const vansElements = vans.map(van =>(
         <>
         <Link 
@@ -33,11 +33,19 @@ export default function HVans(){
         </>
     ))
     return(
-        <div className="host-vans">
-            <h1>Your listed vans</h1>
-            <div className="host-van-elements">
+        <div className="host-van-elements">
             {vansElements}
             </div>
+    )
+}
+    return(
+        <div className="host-vans">
+            <h1>Your listed vans</h1>
+            <Suspense fallback={<h3>Loading Vans Data ...</h3>}>
+                <Await resolve={hostVansPromise.vans}>
+                    {renderHostVans}
+                </Await>
+            </Suspense>
             
         </div>
         

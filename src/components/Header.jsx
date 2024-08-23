@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, NavLink} from 'react-router-dom'
-import imgUrl from '/Users/vaishu/React projects/VanLife/src/images/Usercircle.png'
+// import imgUrl from 'VanLife/src/images/Usercircle.png'
 
 export default function Header(){
     const activeStyle = {
@@ -20,7 +20,7 @@ export default function Header(){
           <NavLink to="/vans" style={({isActive}) => isActive ? activeStyle : null }>Vans</NavLink>
           <NavLink to="/login" style={({isActive}) => isActive ? activeStyle : null }>
           <img 
-            src={imgUrl}
+            src="src/images/Usercircle.png"
              className="login-icon"/> </NavLink>
            <button onClick={fakeLogOut}>logout</button>
           

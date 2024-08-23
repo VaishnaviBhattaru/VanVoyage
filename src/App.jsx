@@ -32,10 +32,12 @@ function App() {
       <Route 
         path="vans" 
         loader = {vansLoader} 
+        errorElement={<Error />}
         element={<Vans />} />
       <Route 
         path="vans/:id" 
         loader = {vansLoaderbyid}  
+        errorElement={<Error />}
         element={<VanDetails />} />
       <Route 
         path = "login" 
@@ -60,10 +62,12 @@ function App() {
           <Route 
             path="vans" 
             loader = {hostvansLoader} 
+            errorElement={<Error />}
             element={<HVans />} />
           <Route 
             path="vans/:id" 
             loader = {hostvansLoaderbyid} 
+            errorElement={<Error />}
             element={<HVanDetails />} >
             <Route 
               index 

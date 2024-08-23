@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link, useSearchParams, useLoaderData} from "react-router-dom";
+import React,{Suspense} from 'react'
+import { Link, useSearchParams, useLoaderData, Await, defer} from "react-router-dom";
 import { getVans } from '../../api';
 
 export function loader() {
-    return getVans()
+    return defer({ vans: getVans() })
 }
 function Capitalize(str){
     return str.charAt(0).toUpperCase() + str.slice(1);
@@ -36,26 +36,26 @@ export default function Vans(){
     const [searchParams,setSearchParams] = useSearchParams()
     const typeFilter = searchParams.get("type")
     // console.log(typeFilter)
-    const vans = useLoaderData()
-    const displayVans = typeFilter? vans.filter(char => char.type.toLowerCase()=== typeFilter): vans
-    const vanContent = displayVans.map(item=>{
-    // console.log(item)
-    return(
-        
-        <Content
-            img = {item.imageUrl}
-            name = {item.name}
-            type = {item.type}
-            price = {item.price}
-            id = {item.id}
-            searchParams = {searchParams}
-            typeFilter = {typeFilter}
-        />
-   ) 
-   })
-    return(
-        <div className='vans-main'>
-        <h1>Explore our van options</h1>
+    const dataPromise = useLoaderData()
+
+    function renderVanElements(vans){
+        const displayVans = typeFilter? vans.filter(char => char.type.toLowerCase()=== typeFilter): vans
+        const vanContent = displayVans.map(item=>{
+        // console.log(item)
+        return(
+            
+            <Content
+                img = {item.imageUrl}
+                name = {item.name}
+                type = {item.type}
+                price = {item.price}
+                id = {item.id}
+                searchParams = {searchParams}
+                typeFilter = {typeFilter}
+            />
+       ) })
+       return(
+        <>
         <div className='vans-main-links'>
         <div className='vans-main-link'>
         <button onClick={() =>setSearchParams({type: "simple"})} className='simple'>Simple</button>
@@ -67,6 +67,19 @@ export default function Vans(){
         <div className='vans'>
         {vanContent}
         </div>
+        </>
+       )
+    }
+   
+   
+    return(
+        <div className='vans-main'>
+        <h1>Explore our van options</h1>
+        <Suspense fallback={<h3>Loading ... </h3>}>
+        <Await resolve={dataPromise.vans}>
+            {renderVanElements}
+        </Await>
+        </Suspense>
         </div>
     )
 }
