@@ -2,8 +2,12 @@
   margin: 0;
   
   box-sizing: border-box;
-  /* width: 80vw; */
+  /* width: 80%; */
 }
+html{
+  font-size: 10px;
+}
+
 body{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -12,6 +16,8 @@ body{
   /* position: relative; */
   margin-left: 10vw;
   margin-right: 10vw;
+  
+  /* max-width: 1600px; */
   
 }
 body::-webkit-scrollbar {
@@ -38,7 +44,7 @@ body::-webkit-scrollbar {
 }
 .home h1{
   font-family: Inter;
-  font-size: 75px;
+  font-size: 7.5rem;
   font-weight: 800;
   line-height: 78px;
   text-align: center;
@@ -52,7 +58,7 @@ body::-webkit-scrollbar {
 }
 .home p{
   font-family: Inter;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 500;
   line-height: 52px;
   text-align: center;
@@ -66,7 +72,7 @@ body::-webkit-scrollbar {
   color: white;
   border-radius: 5px;
   font-family: Inter;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 40px;
   text-decoration: none;
@@ -77,24 +83,29 @@ body::-webkit-scrollbar {
   background: rgba(255, 247, 237, 1);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding-top: 100px;
   padding-bottom: 100px;
+  /* width: 80% */
   
+}
+.about-img{
+  width: 100%
 }
 .about-img img{
   /* height: 70vh; */
-  width: 80vw;
+  width: 100%;
   margin: 0;
+  
 }
 .about-text{
-  width: 80vw;
+  width: 100%;
   padding-top: 10vh;
 }
 .about-text h1{
   font-family: Inter;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 700;
   line-height: 62px;
   text-align: left;
@@ -105,7 +116,7 @@ body::-webkit-scrollbar {
 }
 .about-text p{
   font-family: Inter;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 500;
   line-height: 32px;
   text-align: left;
@@ -113,7 +124,7 @@ body::-webkit-scrollbar {
 
 }
 .about-container{
-  width: 80vw;
+  width: 100%;
   height: 25vh;
   background: rgba(255, 204, 141, 1);
   display: flex;
@@ -127,7 +138,7 @@ body::-webkit-scrollbar {
 }
 .about-container p{
   font-family: Inter;
-font-size: 30px;
+font-size: 3rem;
 font-weight: 700;
 line-height: 34px;
 text-align: left;
@@ -135,15 +146,13 @@ text-align: left;
 
 }
 .about-container a{
-  width: 20vw;
+  width: 20%;
   height: 7vh;
-  top: 827px;
-  left: 65.02px;
   padding: 12px 22px 13px 22px;
   border-radius: 10px;
   background-color: black;
   font-family: Inter;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   line-height: 27px;
   text-align: center;
@@ -156,7 +165,7 @@ text-align: left;
  margin-left: 5vw;
 }
 footer{
-  width: 80vw;
+  width: 80%;
   height: 5vh;
   padding-top: 20px;
   margin-top: 20px;
@@ -166,7 +175,7 @@ footer{
   /* padding: 23px 107.13px 23.08px 107px; */
   background: rgba(37, 37, 37, 1);
   font-family: Inter;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 500;
   line-height: 30px;
   text-align: center;
@@ -180,7 +189,7 @@ footer{
 
 header {
   height: 110px;
-  width: 80vw;
+  width: 80%;
   display: flex;
   align-items: center;
   padding-block: 10px;
@@ -193,7 +202,7 @@ header .site-logo {
   margin-right: auto;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 35px;
+  font-size: 3.5rem;
 }
 
 header a {
@@ -201,7 +210,7 @@ header a {
   color: #4D4D4D;
   font-weight: 600;
   padding: 5px 20px;
-  font-size: 30px;
+  font-size: 3.0rem;
 }
 
 header a:hover {
@@ -220,7 +229,7 @@ header a:hover {
   border-radius: 5px;
   cursor: pointer;
   transition: transform .1s ease-in-out;
-  font-size: 20px;
+  font-size: 2.0rem;
 }
 
 .link-button:hover {
@@ -259,7 +268,7 @@ header a:hover {
 }
 .vans-content2 h2{
   font-family: Inter;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 31.66px;
   text-align: right;
@@ -272,7 +281,7 @@ header a:hover {
   height: 35px;
   border-radius: 5px;
   font-family: Inter;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 31.66px;
   text-align: center;
@@ -280,13 +289,13 @@ header a:hover {
   text-decoration: none;
 
 }
-.simple{
+.Simple{
   background: rgba(225, 118, 84, 1);
 }
-.rugged{
+.Rugged{
   background: rgba(17, 94, 89, 1);
 }
-.luxury{
+.Luxury{
   background: rgba(22, 22, 22, 1);
 
 }
@@ -298,13 +307,16 @@ header a:hover {
 }
 .vans-content3 span{
   font-family: Inter;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 31.66px;
   text-align: right;
   text-decoration: none;
   color: black;
   
+}
+.vans-content3 p{
+  font-size: 1.5rem;
 }
 .vans-main{
   background: rgba(255, 247, 237, 1);
@@ -314,7 +326,7 @@ header a:hover {
 }
 .vans-main h1{
   font-family: Inter;
-  font-size: 40px;
+  font-size: 4.0rem;
   font-weight: 700;
   line-height: 41px;
   text-align: left;
@@ -336,7 +348,7 @@ header a:hover {
     height: 34px;
     padding: 6px 26px;
     font-style: normal;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 500;
     border: none;
     border-radius: 5px;
@@ -355,7 +367,7 @@ header a:hover {
   height: 45px;
   border-radius: 5px;
   font-family: Inter;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 40.66px;
   text-align: center;
@@ -450,7 +462,7 @@ header a:hover {
 .van-detail p{
   width: 40vw;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 2.0rem;
   font-weight: 500;
   line-height: 23.92px;
   text-align: left;
@@ -472,7 +484,7 @@ header a:hover {
 
 .host-nav a{
   font-family: Inter;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 700;
   line-height: 22.92px;
   text-align: left;
@@ -499,7 +511,7 @@ header a:hover {
 .host-vans h1{
   width: 700px;
   font-family: Inter;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 700;
   line-height: 33.65px;
   text-align: left;  
@@ -534,7 +546,7 @@ header a:hover {
 }
 .host-van-info h2{
   font-family: Inter;
-  font-size: 30px;
+  font-size: 3.0rem;
   font-weight: 600;
   line-height: 31.66px;
   text-align: left;
@@ -542,7 +554,7 @@ header a:hover {
 }
 .host-van-info p{
   font-family: Inter;
-  font-size: 20px;
+  font-size: 2.0rem;
 }
 .host-van-container{
  display: flex;
@@ -592,7 +604,7 @@ header a:hover {
 }
 .host-van-dinfo p{
   font-family: Inter;
-  font-size: 19.54px;
+  font-size: 1.9rem;
   font-weight: 700;
   line-height: 35.95px;
   text-align: left;
@@ -610,7 +622,7 @@ header a:hover {
   text-decoration: none;
   color: #4D4D4D;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 3.0rem;
   padding: 10px 20px;
 }
 
@@ -635,7 +647,7 @@ header a:hover {
   text-decoration: none;
   margin-top: 60px;
   margin-left: 26px;
-  font-size: 25px;
+  font-size: 2.5rem;
   
 }
 
@@ -661,13 +673,13 @@ header a:hover {
 }
 
 .host-van-price {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
   padding-left: 10px;
 }
 
 .host-van-price > span {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #4D4D4D;
 }
 
@@ -690,16 +702,16 @@ header a:hover {
 
 }
 .not-found h1{
-  font-size: 50px;
+  font-size: 5.0rem;
 }
 .not-found a{
   text-decoration: none;
   text-align: center;
   font-family: Inter;
-  font-size: 30px;
+  font-size: 3.0rem;
   color: white;
   height: 60px;
-  width: 80vw;
+  width: 80%;
   background-color: black;
   padding-top: 10px;
   border-radius: 5px;
@@ -717,7 +729,7 @@ header a:hover {
 }
 .login h1{
   font-family: Inter;
-  font-size: 300%;
+  font-size: 5rem;
 }
 .login-form{
   display: flex;
@@ -727,17 +739,17 @@ header a:hover {
 }
 
 .login-form input{
-  width: 35rem;
-  height: 3rem;
-  font-size: 25px;
+  width: 20vw;
+  height: 4vh;
+  font-size: 2.5rem;
   border-radius: 6px;
   border: none;
 
 }
 .login-form button{
-  width: 35rem;
-  height: 3rem;
-  font-size: 25px;
+  width: 20vw;
+  height: 4vh;
+  font-size: 2.5rem;
   background-color: #FF8C38;
   border: none;
   border-radius: 6px;
