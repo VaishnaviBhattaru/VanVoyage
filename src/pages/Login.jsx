@@ -1,5 +1,7 @@
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable no-unused-vars */
 import React from "react";
-import { Form, useActionData, useLoaderData, useNavigate, redirect } from "react-router-dom";
+import { Form, useActionData, useLoaderData, redirect } from "react-router-dom";
 import { loginUser } from "../api"
 
 export async function loader({request}){

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* color theme: #396273
+#F2E2C4
+#D96704
+#BF4904
+#731702 */
 *{
   margin: 0;
   
@@ -5,17 +11,20 @@
   /* width: 80%; */
 }
 html{
-  font-size: 10px;
+  font-size: 6px;
 }
-
+h1{
+  font-size: 7rem;
+}
 body{
-  font-family: "Inter", sans-serif;
+  font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background: rgba(255, 247, 237, 1);
+  background-color: #396273;
+  color: #F2E2C4;
   /* position: relative; */
-  margin-left: 10vw;
-  margin-right: 10vw;
+  /* padding-left: 10vw;
+  padding-right: 10vw; */
   
   /* max-width: 1600px; */
   
@@ -29,17 +38,18 @@ body::-webkit-scrollbar {
 } */
 
 .home{
-  background-image: url("images/VanLife.png");
-  background-repeat: no-repeat;
   height: 95vh;
-  width: 100%;
+  width: 100vw;
+  background-image: url("images/main_back.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  gap: 38vh;
+  /* margin-top: 100px; */
   
 }
 .home h1{
@@ -50,7 +60,7 @@ body::-webkit-scrollbar {
   text-align: center;
   width: 70vw;
   height: 13vh;
-  color: white;
+  color: #396273;
   margin: 0;
   /* height: 10vh; */
    
@@ -62,124 +72,143 @@ body::-webkit-scrollbar {
   font-weight: 500;
   line-height: 52px;
   text-align: center;
+  background-color: #39627377;
+  /* color: #396273; */
   width: 70vw;
-  color: white;
+  
 }
 .home a{
   width: 70vw;
   height: 8vh;
-  background: rgba(255, 140, 56, 1);
-  color: white;
-  border-radius: 5px;
+  background: #BF4904;
+  color:#F2E2C4;
+  text-align: center;
+  place-content: center;
+  border-radius: 8px;
   font-family: Inter;
   font-size: 3rem;
   font-weight: 700;
   line-height: 40px;
   text-decoration: none;
-  text-align: center;
-  padding-top: 30px;
 }
 .about{
-  background: rgba(255, 247, 237, 1);
+  background: #F2E2C4;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   /* width: 80% */
   
 }
 .about-img{
-  width: 100%
+  width: 100vw;
+  height: 75vh;
+  background-image: url("images/about-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #F2E2C4;
+  justify-content: center;
+  
+
+
 }
-.about-img img{
-  /* height: 70vh; */
+/* .about-img img{
+ 
   width: 100%;
   margin: 0;
   
-}
-.about-text{
+} */
+/* .about-text{
   width: 100%;
   padding-top: 10vh;
-}
-.about-text h1{
-  font-family: Inter;
+} */
+.about-img h1{
   font-size: 6rem;
   font-weight: 700;
   line-height: 62px;
   text-align: left;
-  width: 70vw;
-  height: 10vh;
-  color: rgb(0, 0, 0);
-  margin: 0;
+  
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background-color: #39627377;
+  /* margin: 0; */
 }
-.about-text p{
-  font-family: Inter;
+.about-img p{
   font-size: 3rem;
   font-weight: 500;
   line-height: 32px;
   text-align: left;
-  padding: 10px;
+  margin: 10px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background-color: #39627377;
 
 }
 .about-container{
   width: 100%;
   height: 25vh;
-  background: rgba(255, 204, 141, 1);
+  background: #F2E2C4;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   border-radius: 7px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   /* padding-left: 10vw; */
   
 
 }
 .about-container p{
-  font-family: Inter;
-font-size: 3rem;
-font-weight: 700;
-line-height: 34px;
-text-align: left;
+  color: #396273;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+/* font-weight: 600; */
 /* margin: 0; */
 
 }
 .about-container a{
   width: 20%;
   height: 7vh;
-  padding: 12px 22px 13px 22px;
-  border-radius: 10px;
-  background-color: black;
-  font-family: Inter;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 27px;
   text-align: center;
-  color: white;
+  color: #F2E2C4;
   text-decoration: none;
-  padding-top: 30px;
+  align-content: center;
+  /* padding: 12px 22px 13px 22px; */
+  border-radius: 10px;
+  background-color: #BF4904;
+  font-size: 2.5rem;
+  font-weight: 700;
+  /* line-height: 27px; */
+  
+  /* padding-top: 30px; */
   margin-left: 5vh;
 }
 .about-container p, .about-container button{
  margin-left: 5vw;
 }
 footer{
-  width: 80%;
+  width: 100%;
   height: 5vh;
   padding-top: 20px;
-  margin-top: 20px;
-  margin-left: 10vw;
+  /* margin-top: 20px;
+  margin-left: 10vw; */
   
   
   /* padding: 23px 107.13px 23.08px 107px; */
-  background: rgba(37, 37, 37, 1);
+  background: #396273;
   font-family: Inter;
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 30px;
   text-align: center;
-  color: rgba(170, 170, 170, 1);
+  color: #faf0db;
   align-self: center;
   position:fixed;
   bottom:0;
@@ -189,25 +218,30 @@ footer{
 
 header {
   height: 110px;
-  width: 80%;
+  width: 100vw;
   display: flex;
   align-items: center;
-  padding-block: 10px;
-  background: rgba(255, 247, 237, 1);
+  padding: 10px;
+  background-color: #396273;
   position:fixed;
+  justify-content: space-between;
+  left: 0
 }
 
 header .site-logo {
-  color: black;
+  /* background-color:rgba(17, 94, 89, 1); */
   margin-right: auto;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 3.5rem;
+  width: 5vw;
 }
-
+.site-logo img{
+  width: 5vw;
+}
 header a {
   text-decoration: none;
-  color: #4D4D4D;
+  color: #F2E2C4;
   font-weight: 600;
   padding: 5px 20px;
   font-size: 3.0rem;
@@ -248,6 +282,10 @@ header a:hover {
   width: 25vw;
   margin-right: 0.5vw;
   margin-top: 2vh;
+  background-color: #396273;
+  color:#F2E2C4;
+  padding-bottom: 10px;
+  border-radius: 6px;
 }
 .vans-content img{
   width: 25vw;
@@ -258,7 +296,6 @@ header a:hover {
   flex-direction: row;
   justify-content: space-between;
   text-decoration: none;
-  color: black;
 
 }
 .vans-content2{
@@ -273,20 +310,23 @@ header a:hover {
   line-height: 31.66px;
   text-align: right;
   text-decoration: none;
-  color: black;
+  color:#F2E2C4;
+  margin-left: 10px;
+  /* color: black; */
   
 }
 .vans-content2 i{
   width: 90px;
   height: 35px;
   border-radius: 5px;
-  font-family: Inter;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 31.66px;
   text-align: center;
-  color: white;
+  /* color: white; */
+  color:#F2E2C4;
   text-decoration: none;
+  margin-left: 10px;
 
 }
 .Simple{
@@ -303,6 +343,7 @@ header a:hover {
   display: flex;
   flex-direction: column;
   padding-right: 5px;
+  padding-bottom: 10px;
   
 }
 .vans-content3 span{
@@ -312,17 +353,21 @@ header a:hover {
   line-height: 31.66px;
   text-align: right;
   text-decoration: none;
-  color: black;
+  color: #F2E2C4;
+  
   
 }
 .vans-content3 p{
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #F2E2C4;
 }
 .vans-main{
-  background: rgba(255, 247, 237, 1);
+  background: #F2E2C4;
   padding-bottom: 20px;
   padding-top: 100px;
   padding-bottom: 100px;
+  color:rgba(17, 94, 89, 1)
 }
 .vans-main h1{
   font-family: Inter;
@@ -354,7 +399,7 @@ header a:hover {
     border-radius: 5px;
     text-decoration: underline;
     background-color: transparent;
-    color: #4D4D4D;
+    color: #396273;
   
 }
 .vans-main-link{
@@ -373,7 +418,7 @@ header a:hover {
   text-align: center;
   padding: 0;
   text-decoration: none;
-  color:rgba(77, 77, 77, 1);
+  color: #396273;
   background: rgba(255, 234, 208, 1);
   align-self: center;
   margin: 0;
@@ -393,13 +438,13 @@ header a:hover {
   
 }
 .van-detail-container {
-  padding: 27px;
+  /* padding: 27px; */
   padding-top: 130px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .van-detail-container .back-button {
-  color: black;
+  color: #396273;
   text-decoration: none;
   align-self: flex-start;
 }
@@ -410,15 +455,17 @@ header a:hover {
 
 .van-detail-container .back-button span {
   text-decoration: underline;
+  color: #396273;
   
 }
 
 .van-detail {
   display: flex;
   flex-direction: column;
-  color: #161616;
+  color:#396273;
   justify-content: center;
   align-items: center;
+  background-color: #F2E2C4;
 }
 
 .van-detail img {
@@ -433,46 +480,47 @@ header a:hover {
 }
 
 .van-detail i {
-  height: 34px;
   padding: 10px 26px;
-  font-style: normal;
+  font-size: 2rem;
   font-weight: 500;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: #F2E2C4;
   
 }
 .van-detail .van-type{
   width: 40vw;
 }
 .van-detail .van-price {
-  font-size: 1.25rem;
+  font-size: 2rem;
   margin-bottom: 10px;
   width: 40vw;
 }
 .van-detail h2{
   margin-top: 10px;
   width: 40vw;
+  font-size: 4rem;
 }
 .van-detail .van-price span {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
   width: 40vw;
 }
 .van-detail p{
   width: 40vw;
-  font-family: Inter;
-  font-size: 2.0rem;
+  /* font-family: Inter; */
+  font-size: 2.75rem;
   font-weight: 500;
   line-height: 23.92px;
   text-align: left;
 
 }
 .van-detail .link-button {
-  background-color: #FF8C38;
+  background-color: #D96704;
   color: white;
-  font-size: 1.125rem;
+  font-size: 2rem;
   width: 40vw;
+  height: 5vh;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -510,7 +558,7 @@ header a:hover {
 }
 .host-vans h1{
   width: 700px;
-  font-family: Inter;
+  /* font-family: Inter; */
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 33.65px;
@@ -545,7 +593,7 @@ header a:hover {
 
 }
 .host-van-info h2{
-  font-family: Inter;
+  /* font-family: Inter; */
   font-size: 3.0rem;
   font-weight: 600;
   line-height: 31.66px;
@@ -553,7 +601,7 @@ header a:hover {
   
 }
 .host-van-info p{
-  font-family: Inter;
+  /* font-family: Inter; */
   font-size: 2.0rem;
 }
 .host-van-container{
