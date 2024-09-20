@@ -45,7 +45,7 @@ export default function Login(){
     return(
        <div className="login">
         <h1>Sign in to your account</h1>
-        {message && <h3>{message}</h3>}
+        {message && <h2>{message}</h2>}
         {errorMessage && <h3>{errorMessage}</h3>}
         <Form method="post" className="login-form" replace>
             <input 
@@ -63,7 +63,9 @@ export default function Login(){
             // value={loginInfo.password}
              />
             <button>Log in</button>
+            
         </Form>
+        <h2>To login enter these details: id: b@b.com, pass: p123</h2>
 
        </div>
     )
