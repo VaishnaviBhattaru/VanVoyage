@@ -18,10 +18,7 @@ export default function Header(){
           <NavLink to="/host"  style={({isActive}) => isActive ? activeStyle : null }>Host</NavLink>
           <NavLink to="/about" style={({isActive}) => isActive ? activeStyle : null }>About</NavLink>
           <NavLink to="/vans" style={({isActive}) => isActive ? activeStyle : null }>Vans</NavLink>
-          <NavLink to="/login" style={({isActive}) => isActive ? activeStyle : null }>
-          <img 
-            src="src/images/Usercircle.png"
-             className="login-icon"/> </NavLink>
+          <NavLink to="/login" style={({isActive}) => isActive ? activeStyle : null }> Login </NavLink>
            <button onClick={fakeLogOut}>Logout</button>
           
         </nav>
