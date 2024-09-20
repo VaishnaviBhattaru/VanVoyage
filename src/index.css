@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
 .home{
   height: 95vh;
   width: 100vw;
-  background-image: url("images/main_back.jpg");
+  background-image: url("main_back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -106,7 +106,7 @@ body::-webkit-scrollbar {
 .about-img{
   width: 100vw;
   height: 75vh;
-  background-image: url("images/about-back.png");
+  background-image: url("about-back.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
