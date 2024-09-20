@@ -8,7 +8,7 @@ export default function Income(){
         { amount: 980, date: "Dec 3, '22", id: "3" },
     ]
     return(
-        <>
+        <section className="income">
     <h1>Income</h1>
     <p>
         Last <span>30 days</span>
@@ -29,6 +29,6 @@ export default function Income(){
                     </div>
                 ))}
             </div>
-    </>
+    </section>
     )
 }

@@ -20,8 +20,8 @@ body{
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: #396273;
-  color: #F2E2C4;
+  background-color: #F2E2C4;
+  color: #396273;
   /* position: relative; */
   /* padding-left: 10vw;
   padding-right: 10vw; */
@@ -53,7 +53,7 @@ body::-webkit-scrollbar {
   
 }
 .home h1{
-  font-family: Inter;
+   
   font-size: 7.5rem;
   font-weight: 800;
   line-height: 78px;
@@ -67,12 +67,13 @@ body::-webkit-scrollbar {
 
 }
 .home p{
-  font-family: Inter;
+   
   font-size: 5rem;
   font-weight: 500;
   line-height: 52px;
   text-align: center;
   background-color: #39627377;
+  color: #F2E2C4;
   /* color: #396273; */
   width: 70vw;
   
@@ -85,7 +86,7 @@ body::-webkit-scrollbar {
   text-align: center;
   place-content: center;
   border-radius: 8px;
-  font-family: Inter;
+   
   font-size: 3rem;
   font-weight: 700;
   line-height: 40px;
@@ -203,7 +204,7 @@ footer{
   
   /* padding: 23px 107.13px 23.08px 107px; */
   background: #396273;
-  font-family: Inter;
+   
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 30px;
@@ -239,12 +240,16 @@ header .site-logo {
 .site-logo img{
   width: 5vw;
 }
-header a {
+header a, header button {
   text-decoration: none;
   color: #F2E2C4;
   font-weight: 600;
   padding: 5px 20px;
   font-size: 3.0rem;
+}
+header button{
+  background-color: #396273;
+  border: None;
 }
 
 header a:hover {
@@ -304,7 +309,7 @@ header a:hover {
   
 }
 .vans-content2 h2{
-  font-family: Inter;
+   
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 31.66px;
@@ -347,7 +352,7 @@ header a:hover {
   
 }
 .vans-content3 span{
-  font-family: Inter;
+   
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 31.66px;
@@ -370,7 +375,7 @@ header a:hover {
   color:rgba(17, 94, 89, 1)
 }
 .vans-main h1{
-  font-family: Inter;
+   
   font-size: 4.0rem;
   font-weight: 700;
   line-height: 41px;
@@ -411,7 +416,7 @@ header a:hover {
   width: 100px !important;
   height: 45px;
   border-radius: 5px;
-  font-family: Inter;
+   
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 40.66px;
@@ -508,7 +513,7 @@ header a:hover {
 }
 .van-detail p{
   width: 40vw;
-  /* font-family: Inter; */
+  /*   */
   font-size: 2.75rem;
   font-weight: 500;
   line-height: 23.92px;
@@ -527,22 +532,23 @@ header a:hover {
 .host-nav{
   display: flex;
   gap: 30px;
-  margin: 15px
+  /* margin: 15px */
 }
 
 .host-nav a{
-  font-family: Inter;
+ 
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 22.92px;
   text-align: left;
   text-decoration: none;
-  color: black;
+  color: #396273;
   padding-top: 125px;
   padding-left: 60px;
 }
 .host-nav a:hover{
   text-decoration: underline;
+  color:#396273
 }
 .host-van-elements{
   display: flex;
@@ -555,10 +561,11 @@ header a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 .host-vans h1{
   width: 700px;
-  /* font-family: Inter; */
+  /*   */
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 33.65px;
@@ -573,7 +580,8 @@ header a:hover {
   display: flex;
   gap: 30px;
   text-decoration: none;
-  background: rgba(255, 255, 255, 1);
+  background: #396273;
+  
 
 }
 .host-van img{
@@ -587,13 +595,14 @@ header a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-family: Inter;
+   
   text-decoration: none;
-  color: black;
+  color:#F2E2C4;
 
 }
 .host-van-info h2{
-  /* font-family: Inter; */
+  text-decoration: none;
+  /*   */
   font-size: 3.0rem;
   font-weight: 600;
   line-height: 31.66px;
@@ -601,7 +610,7 @@ header a:hover {
   
 }
 .host-van-info p{
-  /* font-family: Inter; */
+  /*   */
   font-size: 2.0rem;
 }
 .host-van-container{
@@ -612,7 +621,8 @@ header a:hover {
  margin-top: 20px;
  height: 800px;
   width: 600px;
-  background: rgba(255, 255, 255, 1);
+  background: #F2E2C4;
+  color:#396273;
 
 }
 .host-van-details{
@@ -643,16 +653,21 @@ header a:hover {
 .host-van-dinfo i{
   height: 34px;
   width: 100px;
-  padding: 10px 26px;
-  font-style: normal;
+  align-content: center;
+  text-align: center;
+  /* padding: 10px 26px; */
+  font-size: 2rem;
   font-weight: 500;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: #F2E2C4;
+}
+.host-van-dinfo h2{
+  font-size: 3rem;
 }
 .host-van-dinfo p{
-  font-family: Inter;
-  font-size: 1.9rem;
+   
+  font-size: 3rem;
   font-weight: 700;
   line-height: 35.95px;
   text-align: left;
@@ -668,7 +683,7 @@ header a:hover {
 }
 .host-van-detail-nav a {
   text-decoration: none;
-  color: #4D4D4D;
+  color: #396273;
   font-weight: 500;
   font-size: 3.0rem;
   padding: 10px 20px;
@@ -691,7 +706,7 @@ header a:hover {
 
 .back-button {
   display: block;
-  color: black;
+  color: #396273;
   text-decoration: none;
   margin-top: 60px;
   margin-left: 26px;
@@ -755,7 +770,7 @@ header a:hover {
 .not-found a{
   text-decoration: none;
   text-align: center;
-  font-family: Inter;
+   
   font-size: 3.0rem;
   color: white;
   height: 60px;
@@ -776,7 +791,7 @@ header a:hover {
   font-family: Inter, sans-serif;
 }
 .login h1{
-  font-family: Inter;
+   
   font-size: 5rem;
 }
 .login-form{
@@ -808,4 +823,129 @@ header a:hover {
   margin-top: 20px;
   height: 30px;
   width: 30px;
+}
+.income{
+  color: #396273;
+  /* border: #161616 solid 4px; */
+  font-size: 3rem;
+  padding-left: 10vw;
+  padding-top: 20px;
+}
+.transactions{
+   /* border: #161616 solid 4px;  */
+   margin-bottom: 50px;
+   display: flex;
+   flex-direction: column;
+   gap:10px;
+  /* height: 70vh; */ 
+}
+.transaction{
+  /* border: #161616 solid 4px;  */
+  display: flex;
+  width: 40vw;
+  height: 5vh;
+  background-color: #396273;
+  color:#F2E2C4;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-left:10px;
+  padding-right: 10px;
+}
+.transaction p{
+  color:#F2E2C4;
+}
+.dashboard{
+  border: #161616;
+  color: #396273;
+  padding-left: 10vw;
+  padding-top: 20px;
+  font-size: 2rem;
+}
+
+.reviews-section {
+  background-color: #f2e2c4;
+  padding: 20px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  /* font-family: Arial, sans-serif; */
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.time-range {
+  font-size: 16px;
+  font-weight: normal;
+  color: #555;
+}
+
+.overall-rating {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.overall-rating .star {
+  color: #d96704;
+}
+
+.rating-bars {
+  margin-bottom: 20px;
+}
+
+.rating-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rating-bar span {
+  width: 80px;
+  font-size: 20px;
+}
+
+.bar {
+  height: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+.orange {
+  background-color: #d96704;
+}
+
+.gray {
+  background-color: #cccccc;
+}
+
+.review {
+  margin-bottom: 20px;
+}
+
+.stars {
+  color: #d96704;
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.date {
+  font-size: 14px;
+  color: #888;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
 }

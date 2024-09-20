@@ -22,7 +22,7 @@ export default function Header(){
           <img 
             src="src/images/Usercircle.png"
              className="login-icon"/> </NavLink>
-           <button onClick={fakeLogOut}>logout</button>
+           <button onClick={fakeLogOut}>Logout</button>
           
         </nav>
       </header>
